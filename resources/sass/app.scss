@@ -1,0 +1,65 @@
+@import url("https://fonts.bunny.net/css?family=Nunito");
+@import "variables";
+@import "bootstrap/scss/bootstrap";
+
+// 覆蓋bootstrap預設css
+
+.container-fluid {
+    display: flex;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.row > * {
+    max-width: 100%;
+    padding: 0;
+}
+
+.col,
+.col-3,
+.col-5 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.nav,
+#logout {
+    --bs-nav-link-color: var(--bs-primary);
+    --bs-nav-link-hover-color: white;
+}
+
+.active {
+    --bs-nav-pills-link-active-bg: var(--bs-secondary);
+}
+
+.table {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn-radio {
+    // --bs-btn-bg: #b4beb9 ;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-color: white;
+}
+
+.hover\:border-secondary:hover {
+    --tw-bg-opacity: 1;
+    // border-color: rgb(125 143 133 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+    .container-fluid {
+        padding-left: 100px;
+    }
+}

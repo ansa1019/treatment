@@ -16,9 +16,7 @@ class AnalysisController extends Controller
      */
     public function new(Request $request): View
     {
-        return view('analysis', [
-            'user' => $request->user(),
-        ]);
+        return view('analysis');
     }
 
     /**
@@ -31,7 +29,6 @@ class AnalysisController extends Controller
             array("id" => 87654321, "name" => "呂小華", "subtype" => "mCRPC", "PSA" => 30, "gleason" => 5, "gleason2" => 5, "TNM" => "T3aN0M1b", "note" => "病人特殊事項"),
         );
         return view('analysis', [
-            'user' => $request->user(),
             'data' => $data[$id]
         ]);
     }

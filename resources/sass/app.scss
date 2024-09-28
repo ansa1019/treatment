@@ -1,9 +1,9 @@
 @import url("https://fonts.bunny.net/css?family=Nunito");
 @import "variables";
 @import "bootstrap/scss/bootstrap";
+@import "sweetalert2/src/sweetalert2.scss";
 
 // 覆蓋bootstrap預設css
-
 .container-fluid {
     display: flex;
     align-content: center;

@@ -199,10 +199,10 @@
                         <div id="addictive_effects" class="flex accordion-collapse collapse show">
                             <div class="row flex-nowrap accordion-body border-3 border-top-0 p-0">
                                 <div class="col align-items-center px-2">
-                                    <img src="{{ asset('static/DEG_1.png') }}" class="w-80" />
+                                    <img src="{{ asset('Fig/DEG_1.png') }}" class="w-80" />
                                 </div>
                                 <div class="col align-items-center px-2">
-                                    <img src="{{ asset('static/DEG_2.png') }}" class="w-80" />
+                                    <img src="{{ asset('Fig/DEG_2.png') }}" class="w-80" />
                                 </div>
                             </div>
                         </div>
@@ -222,13 +222,13 @@
                                 <div class="col align-items-center px-2">
                                     <div class="row flex-nowrap">
                                         <p class="fs-1 fw-bold text-danger w-fit pr-5">15%</p>
-                                        <img src="{{ asset('static/15.png') }}" class="w-50" />
+                                        <img src="{{ asset('Fig/15.png') }}" class="w-50" />
                                     </div>
                                 </div>
                                 <div class="col align-items-center px-2">
                                     <div class="row flex-nowrap">
                                         <p class="fs-1 fw-bold text-danger w-fit pr-5">75%</p>
-                                        <img src="{{ asset('static/75.png') }}" class="w-50" />
+                                        <img src="{{ asset('Fig/75.png') }}" class="w-50" />
                                     </div>
                                 </div>
                             </div>
@@ -294,13 +294,13 @@
                                 <div class="col align-items-center px-2">
                                     <div class="row flex-nowrap">
                                         <p class="fs-1 fw-bold text-danger w-fit pr-5">15%</p>
-                                        <img src="{{ asset('static/15.png') }}" class="w-50" />
+                                        <img src="{{ asset('Fig/15.png') }}" class="w-50" />
                                     </div>
                                 </div>
                                 <div class="col align-items-center px-2">
                                     <div class="row flex-nowrap">
                                         <p class="fs-1 fw-bold text-danger w-fit pr-5">60%</p>
-                                        <img src="{{ asset('static/60.png') }}" class="w-50" />
+                                        <img src="{{ asset('Fig/60.png') }}" class="w-50" />
                                     </div>
                                 </div>
                             </div>
@@ -321,13 +321,13 @@
                                 <div class="col align-items-center px-2">
                                     <div class="row flex-nowrap">
                                         <p class="fs-1 fw-bold text-danger w-fit pr-5">15%</p>
-                                        <img src="{{ asset('static/15.png') }}" class="w-50" />
+                                        <img src="{{ asset('Fig/15.png') }}" class="w-50" />
                                     </div>
                                 </div>
                                 <div class="col align-items-center px-2">
                                     <div class="row flex-nowrap">
                                         <p class="fs-1 fw-bold text-danger w-fit pr-5">75%</p>
-                                        <img src="{{ asset('static/75.png') }}" class="w-50" />
+                                        <img src="{{ asset('Fig/75.png') }}" class="w-50" />
                                     </div>
                                 </div>
                             </div>

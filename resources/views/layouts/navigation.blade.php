@@ -1,7 +1,7 @@
 <nav x-data="{ open: false }">
     <!-- Primary Navigation Menu -->
     <div class="w-full px-4 sm:px-6 lg:px-8 bg-white border-b border-gray-200">
-        <div class="flex justify-between h-16">
+        <div class="flex justify-between h-[2.5rem] sm:h-12 md:h-14 lg:h-16">
             <!-- Hamburger -->
             <div class="-me-2 flex items-center sm:hidden">
                 <button @click="open = ! open"

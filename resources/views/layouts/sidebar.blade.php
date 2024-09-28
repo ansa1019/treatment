@@ -1,7 +1,7 @@
 <div class="h-full flex flex-col justify-between align-items-center">
     <a href="/" class="row row-p link-body-emphasis text-decoration-none" title="Icon-only" data-bs-toggle="tooltip"
         data-bs-placement="right">
-        <x-application-logo class="m-0 h-auto" />
+        <img src="{{ asset('logo.png') }}" class="w-full h-auto p-2" alt="">
         <span class="visually-hidden">Icon-only</span>
     </a>
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">

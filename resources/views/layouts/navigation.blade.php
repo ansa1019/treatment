@@ -28,8 +28,8 @@
                     {{ __('new analysis') }}
                 </x-primary-button>
 
-                <!-- Logo -->
-                <x-kmu-logo class="block fill-current text-gray-800" />
+                <!-- Image -->
+                <img src="{{ asset('kmu.png') }}" class="block fill-current h-full" alt="">
             </div>
         </div>
     </div>

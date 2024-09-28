@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\AnalysisController;
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SettingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,16 +25,13 @@ Route::get('/project', function () {
 Route::get('/sample', function () {
     return view('sample');
 })->middleware(['auth', 'verified'])->name('sample');
-Route::get('/setting', function () {
-    return view('setting');
-})->middleware(['auth', 'verified'])->name('setting');
 Route::get('/analysis', [AnalysisController::class, 'new'])->middleware(['auth', 'verified'])->name('new_analysis');
 Route::match(['get', 'post'], '/analysis/{id}', [AnalysisController::class, 'project'])->middleware(['auth', 'verified'])->name('analysis');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/setting', [SettingController::class, 'edit'])->name('setting.edit');
+    Route::patch('/setting', [SettingController::class, 'update'])->name('setting.update');
+    Route::delete('/setting', [SettingController::class, 'destroy'])->name('setting.destroy');
 });
 
 require __DIR__ . '/auth.php';

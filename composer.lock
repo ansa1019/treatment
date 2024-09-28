@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03fa8fbd607d695d8aa6b5099d325ced",
+    "content-hash": "a349383c5500fe749471b3bfb83df832",
     "packages": [
         {
             "name": "brick/math",
@@ -3174,51 +3174,6 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
-        },
-        {
-            "name": "static-assets/laravel",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/StaticAssets/static-assets-laravel.git",
-                "reference": "efaefd4f4385961c916d3cabe75d2b6c4cba2c31"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/StaticAssets/static-assets-laravel/zipball/efaefd4f4385961c916d3cabe75d2b6c4cba2c31",
-                "reference": "efaefd4f4385961c916d3cabe75d2b6c4cba2c31",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "^9.0||^10.0||^11.0",
-                "php": "^8.1"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "StaticAssets\\ServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "StaticAssets\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Static Assets laravel helper package",
-            "support": {
-                "issues": "https://github.com/StaticAssets/static-assets-laravel/issues",
-                "source": "https://github.com/StaticAssets/static-assets-laravel/tree/1.0.0"
-            },
-            "time": "2024-03-25T19:35:59+00:00"
         },
         {
             "name": "symfony/console",

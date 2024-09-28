@@ -16,7 +16,7 @@
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/js/app.js'])
     <script src="https://kit.fontawesome.com/ddbe078107.js" crossorigin="anonymous"></script>
-    <script src="{{ Vite::asset('resources/js/index.js') }}"></script>
+    <script src="{{ asset('resources/js/index.js') }}"></script>
 </head>
 
 <body class="font-sans antialiased">

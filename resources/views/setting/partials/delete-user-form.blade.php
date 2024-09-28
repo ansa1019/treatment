@@ -10,7 +10,7 @@
             </p>
         </header>
 
-        <x-danger-button class="col-3 mt-2" x-data=''
+        <x-danger-button class="col-3 max-w-[200px] mt-2" x-data=''
             x-on:click.prevent="$dispatch('open-modal', 'confirm-user-deletion')">{{ __('Delete Account') }}</x-danger-button>
     </div>
 

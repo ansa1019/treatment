@@ -3,8 +3,8 @@
         <form action="{{ route('login') }}" method="post"
             class="flex flex-col col-12 col-lg-3 h-full rounded-md shadow-sm lg:mr-2 px-2">
             <div class="row bg-secondary flex-nowrap rounded-t-lg px-2 py-1">
-                <x-text-input class="col-3" id="name" name="name" value="{{ $data['name'] ?? '' }}" required
-                    autofocus />
+                <x-text-input class="col-3" id="name" name="name" :readonly="isset($data)"
+                    value="{{ $data['name'] ?? '' }}" required autofocus />
                 <p class="col w-auto m-0 px-1">Medical No.</p>
                 <x-text-input class="col" id="id" name="id" :readonly="isset($data)" :value="$data['id'] ?? ''"
                     required />
@@ -134,8 +134,8 @@
                                     <div class="row">
                                         <x-text-input class="col mr-1" id="cluster_number" name="cluster_number"
                                             placeholder="Cluster number" required />
-                                        <x-text-input class="col-3" id="eps" name="eps"
-                                            placeholder="eps" required />
+                                        <x-text-input class="col-3" id="eps" name="eps" placeholder="eps"
+                                            required />
                                         <x-text-input class="col-12 m-1" id="starts_at" name="starts_at"
                                             placeholder="Starts at" required />
                                     </div>
@@ -168,7 +168,7 @@
                 </div>
 
                 <div class="row h-full mt-auto mb-0">
-                    <x-file-upload/>
+                    <x-file-upload />
                 </div>
             </div>
         @else

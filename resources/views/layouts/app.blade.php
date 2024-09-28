@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Drug Decision Helper') }}</title>
-    <link rel="icon" href="{{ url('logo.png') }}">
+    <link rel="icon" href="{{ asset('logo.png') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">

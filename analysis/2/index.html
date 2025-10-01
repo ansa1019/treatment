@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="pDYau1SW0BGflOV67dTGE9OEsYYPeCUE2LFePh1c">
+    <meta name="csrf-token" content="fsZZ1sI0iHMLWAb5LwcssEjhT7U4KL6X9QM7mEHA">
 
     <title>Laravel</title>
-    <link rel="icon" href="https://127.0.0.1/logo.png">
+    <link rel="icon" href="/treatment/logo.png">
 
     <!-- Scripts -->
     <script type="module" src="http://[::1]:5173/treatment/@vite/client"></script><link rel="stylesheet" href="http://[::1]:5173/treatment/resources/sass/app.scss" /><link rel="stylesheet" href="http://[::1]:5173/treatment/resources/css/app.css" /><script type="module" src="http://[::1]:5173/treatment/resources/js/app.js"></script>    <script src="https://kit.fontawesome.com/ddbe078107.js" crossorigin="anonymous"></script>
-    <script src="https://127.0.0.1/resources/js/index.js"></script>
+    <script src="/treatment/resources/js/index.js"></script>
 </head>
 
 <body class="font-sans antialiased">
@@ -20,7 +20,7 @@
         <div class="h-full flex flex-col justify-between align-items-center">
     <a href="/" class="row row-p link-body-emphasis text-decoration-none" title="Icon-only" data-bs-toggle="tooltip"
         data-bs-placement="right">
-        <img src="https://127.0.0.1/logo.png" class="w-full h-auto p-2" alt="">
+        <img src="/treatment/logo.png" class="w-full h-auto p-2" alt="">
         <span class="visually-hidden">Icon-only</span>
     </a>
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
@@ -55,7 +55,7 @@
             </a>
         </li>
         <li>
-            <a href="https://127.0.0.1/demo-analysis" title="Demo Analysis"
+            <a href="http://127.0.0.1/demo-analysis" title="Demo Analysis"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-flask fa-2xl"></i>
             </a>
@@ -63,7 +63,7 @@
     </ul>
 
     <!-- Authentication -->
-    <form method="POST" action="https://127.0.0.1/logout">
+    <form method="POST" action="http://127.0.0.1/logout">
         <a href="#" id="logout">Logout</a>
     </form>
 </div>
@@ -97,12 +97,12 @@
             <div class="shrink-0 flex items-center h-full w-auto p-1">
                 <!-- Analysis -->
                 <button
-    type="submit" class="inline-flex items-center bg-primary border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition ease-in-out duration-150 px-3 py-2 mr-3 justify-center text-nowrap hidden sm:flex" @click="window.location.href='https://127.0.0.1/analysis'">
+    type="submit" class="inline-flex items-center bg-primary border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition ease-in-out duration-150 px-3 py-2 mr-3 justify-center text-nowrap hidden sm:flex" @click="window.location.href='http://127.0.0.1/analysis'">
     new analysis
 </button>
 
                 <!-- Image -->
-                <img src="https://127.0.0.1/treatment.png" class="block fill-current h-full" alt="">
+                <img src="/treatment/treatment.png" class="block fill-current h-full" alt="">
             </div>
         </div>
     </div>
@@ -110,15 +110,15 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{ 'block': open, 'hidden': !open }"
         class="text-primary bg-light shadow-sm fw-semibold hidden sm:hidden">
-        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="https://127.0.0.1">
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1">
     Dashboard
 </a>
-        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="https://127.0.0.1/project">
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/project">
     project
 </a>
 
         <!-- Authentication -->
-        <form method="POST" action="https://127.0.0.1/logout" class="w-full">
+        <form method="POST" action="http://127.0.0.1/logout" class="w-full">
             <a href="#" id="logout">Logout</a>
         </form>
     </div>
@@ -127,7 +127,7 @@
             <!-- Page Content -->
             <div class="row h-full p-sm-2 p-md-3 p-xl-4 m-0 p-0">
                 <div class="row align-self-start lg:h-[70vh]">
-        <form action="https://127.0.0.1/login" method="post"
+        <form action="http://127.0.0.1/login" method="post"
             class="flex flex-col col-12 col-lg-3 h-full rounded-md shadow-sm lg:mr-2 px-2">
             <div class="row bg-secondary flex-nowrap rounded-t-lg px-2 py-1">
                 <input  readonly type="text" class="border-gray-300 focus:border-primary focus:ring-secondary text-center rounded-md shadow-sm p-1 col-3" value="黃小美" id="name" name="name" required="required" autofocus="autofocus">
@@ -222,10 +222,10 @@
                         <div id="addictive_effects" class="flex accordion-collapse collapse show">
                             <div class="row flex-nowrap accordion-body border-b-[3px] border-top-0 p-0">
                                 <div class="col align-items-center px-2">
-                                    <img src="https://127.0.0.1/Fig/DEG_1.png" class="w-80" />
+                                    <img src="/treatment/Fig/DEG_1.png" class="w-80" />
                                 </div>
                                 <div class="col align-items-center px-2">
-                                    <img src="https://127.0.0.1/Fig/DEG_2.png" class="w-80" />
+                                    <img src="/treatment/Fig/DEG_2.png" class="w-80" />
                                 </div>
                             </div>
                         </div>
@@ -245,13 +245,13 @@
                                 <div class="col align-items-center px-2">
                                     <div class="row flex-nowrap">
                                         <p class="fs-1 fw-bold text-danger w-fit pr-5">15%</p>
-                                        <img src="https://127.0.0.1/Fig/15.png" class="w-50" />
+                                        <img src="/treatment/Fig/15.png" class="w-50" />
                                     </div>
                                 </div>
                                 <div class="col align-items-center px-2">
                                     <div class="row flex-nowrap">
                                         <p class="fs-1 fw-bold text-danger w-fit pr-5">75%</p>
-                                        <img src="https://127.0.0.1/Fig/75.png" class="w-50" />
+                                        <img src="/treatment/Fig/75.png" class="w-50" />
                                     </div>
                                 </div>
                             </div>
@@ -317,13 +317,13 @@
                                 <div class="col align-items-center px-2">
                                     <div class="row flex-nowrap">
                                         <p class="fs-1 fw-bold text-danger w-fit pr-5">10%</p>
-                                        <img src="https://127.0.0.1/Fig/10.png" class="w-50" />
+                                        <img src="/treatment/Fig/10.png" class="w-50" />
                                     </div>
                                 </div>
                                 <div class="col align-items-center px-2">
                                     <div class="row flex-nowrap">
                                         <p class="fs-1 fw-bold text-danger w-fit pr-5">60%</p>
-                                        <img src="https://127.0.0.1/Fig/60.png" class="w-50" />
+                                        <img src="/treatment/Fig/60.png" class="w-50" />
                                     </div>
                                 </div>
                             </div>
@@ -343,12 +343,12 @@
                             <div class="row flex-nowrap accordion-body border-b-[3px] border-top-0 p-0">
                                 <div class="col align-items-center px-2">
                                     <div class="row flex-nowrap">
-                                        <img src="https://127.0.0.1/Fig/Exp_1.png" class="w-80" />
+                                        <img src="/treatment/Fig/Exp_1.png" class="w-80" />
                                     </div>
                                 </div>
                                 <div class="col align-items-center px-2">
                                     <div class="row flex-nowrap">
-                                        <img src="https://127.0.0.1/Fig/Exp_2.png" class="w-80" />
+                                        <img src="/treatment/Fig/Exp_2.png" class="w-80" />
                                     </div>
                                 </div>
                             </div>

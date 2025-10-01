@@ -84,7 +84,7 @@
                     <div class="col-3 max-w-[150px] pt-lg-2">
                         <p class="text-lg pb-1">Cohort</p>
                         <x-select-input id="cohort" name="cohort" required>
-                            @foreach (['KMU', 'Other'] as $key => $value)
+                            @foreach (['treatment', 'Other'] as $key => $value)
                                 <option {{ $key == 0 ? 'selected' : '' }} value="{{ $value }}">
                                     {{ $value }}
                                 </option>

@@ -29,7 +29,7 @@
                 </x-primary-button>
 
                 <!-- Image -->
-                <img src="{{ asset('kmu.png') }}" class="block fill-current h-full" alt="">
+                <img src="{{ asset('treatment.png') }}" class="block fill-current h-full" alt="">
             </div>
         </div>
     </div>

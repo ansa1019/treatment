@@ -4,70 +4,67 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="oxav0LtS3JORdWGOuhpRFAHItrKGzXhViSEMy3vT">
+    <meta name="csrf-token" content="pDYau1SW0BGflOV67dTGE9OEsYYPeCUE2LFePh1c">
 
     <title>Laravel</title>
-    <link rel="icon" href="https://ansa1019.github.io/treatment/logo.png">
+    <link rel="icon" href="https://127.0.0.1/logo.png">
 
     <!-- Scripts -->
-    <script type="module" src="https://ansa1019.github.io/treatment/manifest.json"></script><link rel="stylesheet" href="https://ansa1019.github.io/treatment/resources/sass/app.scss" /><link rel="stylesheet" href="https://ansa1019.github.io/treatment/resources/css/app.css" /><script type="module" src="https://ansa1019.github.io/treatment/resources/js/app.js"></script>    <script src="https://kit.fontawesome.com/ddbe078107.js" crossorigin="anonymous"></script>
-    <script src="https://ansa1019.github.io/treatment/resources/js/index.js"></script>
+    <script type="module" src="http://[::1]:5173/treatment/@vite/client"></script><link rel="stylesheet" href="http://[::1]:5173/treatment/resources/sass/app.scss" /><link rel="stylesheet" href="http://[::1]:5173/treatment/resources/css/app.css" /><script type="module" src="http://[::1]:5173/treatment/resources/js/app.js"></script>    <script src="https://kit.fontawesome.com/ddbe078107.js" crossorigin="anonymous"></script>
+    <script src="https://127.0.0.1/resources/js/index.js"></script>
 </head>
 
 <body class="font-sans antialiased">
     <!-- Sidebar -->
     <div id="sidebar" class="bg-secondary hidden sm:block p-0 fixed">
         <div class="h-full flex flex-col justify-between align-items-center">
-    <a href="http://ansa1019.github.io/treatment/" class="row row-p link-body-emphasis text-decoration-none" title="Icon-only" data-bs-toggle="tooltip"
+    <a href="/" class="row row-p link-body-emphasis text-decoration-none" title="Icon-only" data-bs-toggle="tooltip"
         data-bs-placement="right">
-        <img src="https://ansa1019.github.io/treatment/logo.png" class="w-full h-auto p-2" alt="">
+        <img src="https://127.0.0.1/logo.png" class="w-full h-auto p-2" alt="">
         <span class="visually-hidden">Icon-only</span>
     </a>
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
         <li class="nav-item">
-            <a href="http://ansa1019.github.io/treatment/" title="Home"
+            <a href="/" title="Home"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-house fa-2xl"></i>
             </a>
         </li>
         <li>
-            <a href="http://ansa1019.github.io/treatment/project" title="Project"
+            <a href="/project" title="Project"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-hospital-user fa-2xl"></i>
             </a>
         </li>
         <li>
-            <a href="http://ansa1019.github.io/treatment/sample" title="Sample"
+            <a href="/sample" title="Sample"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-file fa-2xl"></i>
             </a>
         </li>
         <li>
-            <a href="http://ansa1019.github.io/treatment/setting" title="Setting"
+            <a href="/setting" title="Setting"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-gear fa-2xl"></i>
             </a>
         </li>
         <li>
-            <a href="http://ansa1019.github.io/treatment/edit" title="Edit"
+            <a href="/edit" title="Edit"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-pen fa-2xl"></i>
             </a>
         </li>
         <li>
-            <a href="https://ansa1019.github.io/treatment/demo-analysis" title="Demo Analysis"
-            class="nav-link active py-4 rounded-0">
+            <a href="https://127.0.0.1/demo-analysis" title="Demo Analysis"
+                class="nav-link active py-4 rounded-0">
                 <i class="fa-solid fa-flask fa-2xl"></i>
             </a>
         </li>
     </ul>
 
     <!-- Authentication -->
-    <form method="POST" action="https://ansa1019.github.io/treatment/logout">
-        <input type="hidden" name="_token" value="oxav0LtS3JORdWGOuhpRFAHItrKGzXhViSEMy3vT" autocomplete="off">        <a href="route('logout')" onclick="event.preventDefault();this.closest('form').submit();" id="logout"
-            class="nav-link py-4 rounded-0">
-            <i class="fa-solid fa-right-from-bracket fa-2xl"></i>
-        </a>
+    <form method="POST" action="https://127.0.0.1/logout">
+        <a href="#" id="logout">Logout</a>
     </form>
 </div>
     </div>
@@ -100,12 +97,12 @@
             <div class="shrink-0 flex items-center h-full w-auto p-1">
                 <!-- Analysis -->
                 <button
-    type="submit" class="inline-flex items-center bg-primary border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition ease-in-out duration-150 px-3 py-2 mr-3 justify-center text-nowrap hidden sm:flex" @click="window.location.href='https://ansa1019.github.io/treatment/analysis'">
+    type="submit" class="inline-flex items-center bg-primary border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition ease-in-out duration-150 px-3 py-2 mr-3 justify-center text-nowrap hidden sm:flex" @click="window.location.href='https://127.0.0.1/analysis'">
     new analysis
 </button>
 
                 <!-- Image -->
-                <img src="https://ansa1019.github.io/treatment/treatment.png" class="block fill-current h-full" alt="">
+                <img src="https://127.0.0.1/treatment.png" class="block fill-current h-full" alt="">
             </div>
         </div>
     </div>
@@ -113,18 +110,16 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{ 'block': open, 'hidden': !open }"
         class="text-primary bg-light shadow-sm fw-semibold hidden sm:hidden">
-        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1">
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="https://127.0.0.1">
     Dashboard
 </a>
-        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="https://ansa1019.github.io/treatment/project">
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="https://127.0.0.1/project">
     project
 </a>
 
         <!-- Authentication -->
-        <form method="POST" action="https://ansa1019.github.io/treatment/logout" class="w-full">
-            <input type="hidden" name="_token" value="oxav0LtS3JORdWGOuhpRFAHItrKGzXhViSEMy3vT" autocomplete="off">            <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="https://ansa1019.github.io/treatment/logout" onclick="event.preventDefault();this.closest('form').submit();" id="logout">
-    Log out
-</a>
+        <form method="POST" action="https://127.0.0.1/logout" class="w-full">
+            <a href="#" id="logout">Logout</a>
         </form>
     </div>
 </nav>
@@ -136,8 +131,8 @@
 
         
         <div class="text-center">
-            <form method="POST" action="https://ansa1019.github.io/treatment/demo-analysis/run">
-                <input type="hidden" name="_token" value="oxav0LtS3JORdWGOuhpRFAHItrKGzXhViSEMy3vT" autocomplete="off">                <button type="submit" class="btn btn-primary px-6 py-2 text-lg">
+            <form method="POST" action="https://127.0.0.1/demo-analysis/run">
+                <input type="hidden" name="_token" value="pDYau1SW0BGflOV67dTGE9OEsYYPeCUE2LFePh1c" autocomplete="off">                <button type="submit" class="btn btn-primary px-6 py-2 text-lg">
                     🚀 開始分析
                 </button>
             </form>

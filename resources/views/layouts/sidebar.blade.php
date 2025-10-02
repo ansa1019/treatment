@@ -29,18 +29,6 @@
                 <i class="fa-solid fa-gear fa-2xl"></i>
             </a>
         </li>
-        <li>
-            <a href="/edit" title="Edit"
-                class="{{ Request::is('edit') ? 'nav-link active' : 'nav-link' }} py-4 rounded-0">
-                <i class="fa-solid fa-pen fa-2xl"></i>
-            </a>
-        </li>
-        <li>
-            <a href="{{ route('demo.analysis') }}" title="Demo Analysis"
-            class="{{ Request::is('demo-analysis') ? 'nav-link active' : 'nav-link' }} py-4 rounded-0">
-                <i class="fa-solid fa-flask fa-2xl"></i>
-            </a>
-        </li>
     </ul>
 
     <!-- Authentication -->

@@ -11,7 +11,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ([['16 Aug 2024', 'Subject_001', 'Baseline', 'Done', 'view', 'mCRPC'], ['16 Aug 2024', 'Subject_002', 'Baseline', 'In Progress', 'view', 'mCRPC'], ['16 Aug 2024', 'Subject_003', 'Baseline', 'In Progress', 'view', 'mCRPC'], ['16 Aug 2025', 'Subject_004', 'Baseline', 'In Progress', 'view', 'mCRPC']] as $index => $item)
+            @foreach ([['16 Aug 2024', 'Subject_001', 'Baseline', 'Done', 'view', 'mCRPC'], ['16 Aug 2024', 'Subject_002', 'Baseline', 'In Progress', 'view', 'mCRPC']] as $index => $item)
                 <tr>
                     @foreach ($item as $i => $x)
                         @if ($i == 1)

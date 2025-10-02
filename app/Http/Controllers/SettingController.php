@@ -14,9 +14,9 @@ class SettingController extends Controller
     /**
      * Display the user's setting form.
      */
-    public function personal(Request $request): View
+    public function edit(Request $request): View
     {
-        return view('setting.personal', [
+        return view('setting.edit', [
             'user' => $request->user(),
         ]);
     }
@@ -34,7 +34,7 @@ class SettingController extends Controller
 
         $request->user()->save();
 
-        return Redirect::route('setting.personal')->with('status', 'setting-updated');
+        return Redirect::route('setting.edit')->with('status', 'setting-updated');
     }
 
     /**

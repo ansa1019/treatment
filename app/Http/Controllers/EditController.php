@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\View\View;
 
-class DashboardController extends Controller
+class EditController extends Controller
 {
     /**
-     * Display the dashboard view.
+     * Display the edit view.
      */
     public function view(): View
     {
-        return view('dashboard');
+        return view('edit');
     }
 }

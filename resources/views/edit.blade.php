@@ -1,17 +1,17 @@
 <x-app-layout>
     <x-TableList-layout>
         <x-slot name="title">
-            {{ __('Sample') }}
+            {{ __('Edit') }}
         </x-slot>
         <thead class="fs-5">
             <tr>
-                @foreach (['Last Modified', 'Subject ID', 'Time', 'Analysis Status', 'QC report', 'Stages', ''] as $item)
+                @foreach (['ID', 'Name', 'Subtype', 'PSA', 'Gleason', 'TNM', 'Note',''] as $item)
                     <th scope="col">{{ $item }}</th>
                 @endforeach
             </tr>
         </thead>
         <tbody>
-            @foreach ([['16 Aug 2024', 'Subject_001', 'Baseline', 'Done', 'view', 'mCRPC'], ['16 Aug 2024', 'Subject_002', 'Baseline', 'In Progress', 'view', 'mCRPC'], ['16 Aug 2024', 'Subject_003', 'Baseline', 'In Progress', 'view', 'mCRPC'], ['16 Aug 2025', 'Subject_004', 'Baseline', 'In Progress', 'view', 'mCRPC']] as $index => $item)
+            @foreach ([['12345678', '王小明', 'mCRPC', '50', '5+4', 'T3aN0M1b','病人特殊事項'], ['87654321', '呂小華', 'mCRPC', '30', '5+5', 'T3aN0M1b','病人特殊事項'], ['58746975', '黃小美', 'mCRPC', '40', '4+4', 'T3aN0M1b','病人特殊事項']] as $index => $item)
                 <tr>
                     @foreach ($item as $i => $x)
                         @if ($i == 1)
@@ -21,10 +21,11 @@
                         @endif
                     @endforeach
                     <td>
-                        <a href="/analysis/{{ $index }}" class="btn btn-primary rounded-5">Analysis</a>
+                        <a href="/updated-edit" class="btn btn-primary rounded-5">Edit</a>
                     </td>
                 </tr>
             @endforeach
         </tbody>
+
     </x-TableList-layout>
 </x-app-layout>

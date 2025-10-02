@@ -40,13 +40,13 @@
         </li>
         <li>
             <a href="/sample" title="Sample"
-                class="nav-link active py-4 rounded-0">
+                class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-file fa-2xl"></i>
             </a>
         </li>
         <li>
             <a href="/edit" title="Edit"
-                class="nav-link py-4 rounded-0">
+                class="nav-link active py-4 rounded-0">
                 <i class="fa-solid fa-pen fa-2xl"></i>
             </a>
         </li>
@@ -121,10 +121,10 @@
         <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/project">
     Project
 </a>
-        <a class="block w-full p-3 border-l-4 border-primary text-primary text-decoration-none transition duration-150 ease-in-out disabled" href="http://127.0.0.1/sample">
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/sample">
     Sample
 </a>
-        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/edit">
+        <a class="block w-full p-3 border-l-4 border-primary text-primary text-decoration-none transition duration-150 ease-in-out disabled" href="http://127.0.0.1/edit">
     Edit
 </a>
         <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/demo-analysis">
@@ -146,63 +146,56 @@
             <!-- Page Content -->
             <div class="row h-full p-sm-2 p-md-3 p-xl-4 m-0 p-0">
                 <div class="col align-self-start m-0 p-0">
-    <p class="fs-3">Sample</p>
+    <p class="fs-3">Edit</p>
     <div class="row row-p table-responsive section-card mx-1 px-4 py-3">
         <table class="table table-auto border-spacing-0 mb-auto">
             <thead class="fs-5">
             <tr>
-                                    <th scope="col">Last Modified</th>
-                                    <th scope="col">Subject ID</th>
-                                    <th scope="col">Time</th>
-                                    <th scope="col">Analysis Status</th>
-                                    <th scope="col">QC report</th>
-                                    <th scope="col">Stages</th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Subtype</th>
+                                    <th scope="col">PSA</th>
+                                    <th scope="col">Gleason</th>
+                                    <th scope="col">TNM</th>
+                                    <th scope="col">Note</th>
                                     <th scope="col"></th>
                             </tr>
         </thead>
         <tbody>
                             <tr>
-                                                                        <td>16 Aug 2024</td>
-                                                                                                <th scope="row">Subject_001</th>
-                                                                                                <td>Baseline</td>
-                                                                                                <td>Done</td>
-                                                                                                <td>view</td>
+                                                                        <td>12345678</td>
+                                                                                                <th scope="row">王小明</th>
                                                                                                 <td>mCRPC</td>
+                                                                                                <td>50</td>
+                                                                                                <td>5+4</td>
+                                                                                                <td>T3aN0M1b</td>
+                                                                                                <td>病人特殊事項</td>
                                                                 <td>
-                        <a href="http://127.0.0.1/analysis/0" class="btn btn-primary rounded-5">Analysis</a>
+                        <a href="#" class="btn btn-primary rounded-5">Edit</a>
                     </td>
                 </tr>
                             <tr>
-                                                                        <td>16 Aug 2024</td>
-                                                                                                <th scope="row">Subject_002</th>
-                                                                                                <td>Baseline</td>
-                                                                                                <td>In Progress</td>
-                                                                                                <td>view</td>
+                                                                        <td>87654321</td>
+                                                                                                <th scope="row">呂小華</th>
                                                                                                 <td>mCRPC</td>
+                                                                                                <td>30</td>
+                                                                                                <td>5+5</td>
+                                                                                                <td>T3aN0M1b</td>
+                                                                                                <td>病人特殊事項</td>
                                                                 <td>
-                        <a href="http://127.0.0.1/analysis/1" class="btn btn-primary rounded-5">Analysis</a>
+                        <a href="#" class="btn btn-primary rounded-5">Edit</a>
                     </td>
                 </tr>
                             <tr>
-                                                                        <td>16 Aug 2024</td>
-                                                                                                <th scope="row">Subject_003</th>
-                                                                                                <td>Baseline</td>
-                                                                                                <td>In Progress</td>
-                                                                                                <td>view</td>
+                                                                        <td>58746975</td>
+                                                                                                <th scope="row">黃小美</th>
                                                                                                 <td>mCRPC</td>
+                                                                                                <td>40</td>
+                                                                                                <td>4+4</td>
+                                                                                                <td>T3aN0M1b</td>
+                                                                                                <td>病人特殊事項</td>
                                                                 <td>
-                        <a href="http://127.0.0.1/analysis/2" class="btn btn-primary rounded-5">Analysis</a>
-                    </td>
-                </tr>
-                            <tr>
-                                                                        <td>16 Aug 2025</td>
-                                                                                                <th scope="row">Subject_004</th>
-                                                                                                <td>Baseline</td>
-                                                                                                <td>In Progress</td>
-                                                                                                <td>view</td>
-                                                                                                <td>mCRPC</td>
-                                                                <td>
-                        <a href="http://127.0.0.1/analysis/3" class="btn btn-primary rounded-5">Analysis</a>
+                        <a href="#" class="btn btn-primary rounded-5">Edit</a>
                     </td>
                 </tr>
                     </tbody>

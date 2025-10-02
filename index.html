@@ -6,13 +6,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="KW7S3P6hDTmkbFctryUnzBFUvD92S0PlpT76Uf3u">
+    <meta name="csrf-token" content="4NxZV7Bqye8LDprcoABm9PYKsBkidGGwDroYvRK0">
 
     <title>Drug Decision Helper</title>
     <link rel="icon" href="/treatment/logo.png">
 
     <!-- Scripts -->
-    <link rel="preload" as="style" href="/treatment/build/assets/app-BGEKq-JO.css" /><link rel="preload" as="style" href="/treatment/build/assets/app-BO8qMaqV.css" /><link rel="modulepreload" href="/treatment/build/assets/app-gxKLSGde.js" /><link rel="stylesheet" href="/treatment/build/assets/app-BGEKq-JO.css" /><link rel="stylesheet" href="/treatment/build/assets/app-BO8qMaqV.css" /><script type="module" src="/treatment/build/assets/app-gxKLSGde.js"></script>    <script src="https://kit.fontawesome.com/ddbe078107.js" crossorigin="anonymous"></script>
+    <link rel="preload" as="style" href="/treatment/build/assets/app-BGEKq-JO.css" /><link rel="preload" as="style" href="/treatment/build/assets/app-CGxzH9Gr.css" /><link rel="modulepreload" href="/treatment/build/assets/app-gxKLSGde.js" /><link rel="stylesheet" href="/treatment/build/assets/app-BGEKq-JO.css" /><link rel="stylesheet" href="/treatment/build/assets/app-CGxzH9Gr.css" /><script type="module" src="/treatment/build/assets/app-gxKLSGde.js"></script>    <script src="https://kit.fontawesome.com/ddbe078107.js" crossorigin="anonymous"></script>
     <script src="/treatment/resources/js/index.js"></script>
 </head>
 
@@ -20,32 +20,44 @@
     <!-- Sidebar -->
     <div id="sidebar" class="bg-secondary hidden sm:block p-0 fixed">
         <div class="h-full flex flex-col justify-between align-items-center">
-    <a href="./" class="row row-p link-body-emphasis text-decoration-none" title="Icon-only" data-bs-toggle="tooltip"
+    <a href="/" class="row row-p link-body-emphasis text-decoration-none" title="Icon-only" data-bs-toggle="tooltip"
         data-bs-placement="right">
         <img src="/treatment/logo.png" class="w-full h-auto p-2" alt="">
         <span class="visually-hidden">Icon-only</span>
     </a>
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
         <li class="nav-item">
-            <a href="./" title="Home"
+            <a href="/" title="Home"
                 class="nav-link active py-4 rounded-0">
                 <i class="fa-solid fa-house fa-2xl"></i>
             </a>
         </li>
         <li>
-            <a href="project" title="Project"
+            <a href="/project" title="Project"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-hospital-user fa-2xl"></i>
             </a>
         </li>
         <li>
-            <a href="sample" title="Sample"
+            <a href="/sample" title="Sample"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-file fa-2xl"></i>
             </a>
         </li>
         <li>
-            <a href="setting" title="Setting"
+            <a href="/edit" title="Edit"
+                class="nav-link py-4 rounded-0">
+                <i class="fa-solid fa-pen fa-2xl"></i>
+            </a>
+        </li>
+        <li>
+            <a href="http://127.0.0.1/demo-analysis" title="Demo Analysis"
+                class="nav-link py-4 rounded-0">
+                <i class="fa-solid fa-flask fa-2xl"></i>
+            </a>
+        </li>
+        <li>
+            <a href="/setting" title="Setting"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-gear fa-2xl"></i>
             </a>
@@ -53,8 +65,8 @@
     </ul>
 
     <!-- Authentication -->
-    <form method="POST" action="http://127.0.0.1">
-        <input type="hidden" name="_token" value="KW7S3P6hDTmkbFctryUnzBFUvD92S0PlpT76Uf3u" autocomplete="off">        <a href="./" onclick="event.preventDefault();this.closest('form').submit();" id="logout"
+    <form method="POST" action="http://127.0.0.1/logout">
+        <input type="hidden" name="_token" value="4NxZV7Bqye8LDprcoABm9PYKsBkidGGwDroYvRK0" autocomplete="off">        <a href="http://127.0.0.1/logout" onclick="event.preventDefault();this.closest('form').submit();" id="logout"
             class="nav-link py-4 rounded-0">
             <i class="fa-solid fa-right-from-bracket fa-2xl"></i>
         </a>
@@ -99,7 +111,38 @@
             </div>
         </div>
     </div>
+
+    <!-- Responsive Navigation Menu -->
+    <div :class="{ 'block': open, 'hidden': !open }"
+        class="text-primary bg-light shadow-sm fw-semibold hidden sm:hidden">
+        <a class="block w-full p-3 border-l-4 border-primary text-primary text-decoration-none transition duration-150 ease-in-out disabled" href="http://127.0.0.1">
+    Home
+</a>
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/project">
+    Project
+</a>
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/sample">
+    Sample
+</a>
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/edit">
+    Edit
+</a>
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/demo-analysis">
+    Demo Analysis
+</a>
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/setting">
+    Setting
+</a>
+
+        <!-- Authentication -->
+        <form method="POST" action="http://127.0.0.1/logout" class="w-full">
+            <input type="hidden" name="_token" value="4NxZV7Bqye8LDprcoABm9PYKsBkidGGwDroYvRK0" autocomplete="off">            <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1" onclick="event.preventDefault();this.closest('form').submit();" id="logout">
+    Log out
+</a>
+        </form>
+    </div>
 </nav>
+
             <!-- Page Content -->
             <div class="row h-full p-sm-2 p-md-3 p-xl-4 m-0 p-0">
                 <div class="col-12 col-lg-8 lg:h-full m-0 p-0">

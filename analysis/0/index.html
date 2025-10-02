@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
+    <base href="/">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="1fEaodDcvkr8SM5LbhcvN7OrEVEZJiIQAp8iRbJT">
+    <meta name="csrf-token" content="KW7S3P6hDTmkbFctryUnzBFUvD92S0PlpT76Uf3u">
 
     <title>Drug Decision Helper</title>
     <link rel="icon" href="/treatment/logo.png">
@@ -18,32 +20,32 @@
     <!-- Sidebar -->
     <div id="sidebar" class="bg-secondary hidden sm:block p-0 fixed">
         <div class="h-full flex flex-col justify-between align-items-center">
-    <a href="/" class="row row-p link-body-emphasis text-decoration-none" title="Icon-only" data-bs-toggle="tooltip"
+    <a href="./" class="row row-p link-body-emphasis text-decoration-none" title="Icon-only" data-bs-toggle="tooltip"
         data-bs-placement="right">
         <img src="/treatment/logo.png" class="w-full h-auto p-2" alt="">
         <span class="visually-hidden">Icon-only</span>
     </a>
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
         <li class="nav-item">
-            <a href="/" title="Home"
+            <a href="./" title="Home"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-house fa-2xl"></i>
             </a>
         </li>
         <li>
-            <a href="/project" title="Project"
+            <a href="project" title="Project"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-hospital-user fa-2xl"></i>
             </a>
         </li>
         <li>
-            <a href="/sample" title="Sample"
+            <a href="sample" title="Sample"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-file fa-2xl"></i>
             </a>
         </li>
         <li>
-            <a href="/setting" title="Setting"
+            <a href="setting" title="Setting"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-gear fa-2xl"></i>
             </a>
@@ -51,8 +53,8 @@
     </ul>
 
     <!-- Authentication -->
-    <form method="POST" action="http://localhost">
-        <input type="hidden" name="_token" value="1fEaodDcvkr8SM5LbhcvN7OrEVEZJiIQAp8iRbJT" autocomplete="off">        <a href="#" onclick="event.preventDefault();this.closest('form').submit();" id="logout"
+    <form method="POST" action="http://127.0.0.1">
+        <input type="hidden" name="_token" value="KW7S3P6hDTmkbFctryUnzBFUvD92S0PlpT76Uf3u" autocomplete="off">        <a href="./" onclick="event.preventDefault();this.closest('form').submit();" id="logout"
             class="nav-link py-4 rounded-0">
             <i class="fa-solid fa-right-from-bracket fa-2xl"></i>
         </a>
@@ -88,7 +90,7 @@
             <div class="shrink-0 flex items-center h-full w-auto p-1">
                 <!-- Analysis -->
                 <button
-    type="submit" class="inline-flex items-center bg-primary border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition ease-in-out duration-150 px-3 py-2 mr-3 justify-center text-nowrap hidden sm:flex" @click="window.location.href='http://localhost/analysis'">
+    type="submit" class="inline-flex items-center bg-primary border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition ease-in-out duration-150 px-3 py-2 mr-3 justify-center text-nowrap hidden sm:flex" @click="window.location.href='http://127.0.0.1/analysis'">
     new analysis
 </button>
 
@@ -97,29 +99,11 @@
             </div>
         </div>
     </div>
-
-    <!-- Responsive Navigation Menu -->
-    <div :class="{ 'block': open, 'hidden': !open }"
-        class="text-primary bg-light shadow-sm fw-semibold hidden sm:hidden">
-        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://localhost">
-    Dashboard
-</a>
-        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://localhost/project">
-    project
-</a>
-
-        <!-- Authentication -->
-        <form method="POST" action="http://localhost/logout" class="w-full">
-            <input type="hidden" name="_token" value="1fEaodDcvkr8SM5LbhcvN7OrEVEZJiIQAp8iRbJT" autocomplete="off">            <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://localhost" onclick="event.preventDefault();this.closest('form').submit();" id="logout">
-    Log out
-</a>
-        </form>
-    </div>
 </nav>
             <!-- Page Content -->
             <div class="row h-full p-sm-2 p-md-3 p-xl-4 m-0 p-0">
                 <div class="row align-self-start lg:h-[70vh]">
-        <form action="http://localhost/login" method="post"
+        <form action="http://127.0.0.1/login" method="post"
             class="flex flex-col col-12 col-lg-3 h-full rounded-md shadow-sm lg:mr-2 px-2">
             <div class="row bg-secondary flex-nowrap rounded-t-lg px-2 py-1">
                 <input  readonly type="text" class="border-gray-300 focus:border-primary focus:ring-secondary text-center rounded-md shadow-sm p-1 col-3" value="王小明" id="name" name="name" required="required" autofocus="autofocus">

@@ -4,67 +4,55 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="oxav0LtS3JORdWGOuhpRFAHItrKGzXhViSEMy3vT">
+    <meta name="csrf-token" content="QfdCsQwbld6NfJZfUGIEqyCzQDfb0u079scymlf6">
 
     <title>Laravel</title>
-    <link rel="icon" href="https://ansa1019.github.io/treatment/logo.png">
+    <link rel="icon" href="/treatment/logo.png">
 
     <!-- Scripts -->
-    <script type="module" src="https://ansa1019.github.io/treatment/manifest.json"></script><link rel="stylesheet" href="https://ansa1019.github.io/treatment/resources/sass/app.scss" /><link rel="stylesheet" href="https://ansa1019.github.io/treatment/resources/css/app.css" /><script type="module" src="https://ansa1019.github.io/treatment/resources/js/app.js"></script>    <script src="https://kit.fontawesome.com/ddbe078107.js" crossorigin="anonymous"></script>
-    <script src="https://ansa1019.github.io/treatment/resources/js/index.js"></script>
+    <link rel="preload" as="style" href="/treatment/build/assets/app-BGEKq-JO.css" /><link rel="preload" as="style" href="/treatment/build/assets/app-CGxzH9Gr.css" /><link rel="modulepreload" href="/treatment/build/assets/app-gxKLSGde.js" /><link rel="stylesheet" href="/treatment/build/assets/app-BGEKq-JO.css" /><link rel="stylesheet" href="/treatment/build/assets/app-CGxzH9Gr.css" /><script type="module" src="/treatment/build/assets/app-gxKLSGde.js"></script>    <script src="https://kit.fontawesome.com/ddbe078107.js" crossorigin="anonymous"></script>
+    <script src="/treatment/resources/js/index.js"></script>
 </head>
 
 <body class="font-sans antialiased">
     <!-- Sidebar -->
     <div id="sidebar" class="bg-secondary hidden sm:block p-0 fixed">
         <div class="h-full flex flex-col justify-between align-items-center">
-    <a href="https://ansa1019.github.io/treatment/" class="row row-p link-body-emphasis text-decoration-none" title="Icon-only" data-bs-toggle="tooltip"
-        data-bs-placement="right">
-        <img src="https://ansa1019.github.io/treatment/logo.png" class="w-full h-auto p-2" alt="">
+    <a href="http://127.0.0.1" class="row row-p link-body-emphasis text-decoration-none" title="Icon-only"
+        data-bs-toggle="tooltip" data-bs-placement="right">
+        <img src="/treatment/logo.png" class="w-full h-auto p-2" alt="">
         <span class="visually-hidden">Icon-only</span>
     </a>
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
         <li class="nav-item">
-            <a href="https://ansa1019.github.io/treatment/" title="Home"
+            <a href="http://127.0.0.1" title="Home"
                 class="nav-link active py-4 rounded-0">
                 <i class="fa-solid fa-house fa-2xl"></i>
             </a>
         </li>
         <li>
-            <a href="https://ansa1019.github.io/treatment/project" title="Project"
+            <a href="http://127.0.0.1/project" title="Project"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-hospital-user fa-2xl"></i>
             </a>
         </li>
         <li>
-            <a href="https://ansa1019.github.io/treatment/sample" title="Sample"
+            <a href="http://127.0.0.1/sample" title="Sample"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-file fa-2xl"></i>
             </a>
         </li>
         <li>
-            <a href="https://ansa1019.github.io/treatment/setting" title="Setting"
+            <a href="http://127.0.0.1/setting" title="Setting"
                 class="nav-link py-4 rounded-0">
                 <i class="fa-solid fa-gear fa-2xl"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://ansa1019.github.io/treatment/edit" title="Edit"
-                class="nav-link py-4 rounded-0">
-                <i class="fa-solid fa-pen fa-2xl"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://ansa1019.github.io/treatment/demo-analysis" title="Demo Analysis"
-            class="nav-link py-4 rounded-0">
-                <i class="fa-solid fa-flask fa-2xl"></i>
             </a>
         </li>
     </ul>
 
     <!-- Authentication -->
-    <form method="POST" action="https://ansa1019.github.io/treatment/logout">
-        <input type="hidden" name="_token" value="oxav0LtS3JORdWGOuhpRFAHItrKGzXhViSEMy3vT" autocomplete="off">        <a href="route('logout')" onclick="event.preventDefault();this.closest('form').submit();" id="logout"
+    <form method="POST" action="http://127.0.0.1">
+        <input type="hidden" name="_token" value="QfdCsQwbld6NfJZfUGIEqyCzQDfb0u079scymlf6" autocomplete="off">        <a href="http://127.0.0.1" onclick="event.preventDefault();this.closest('form').submit();" id="logout"
             class="nav-link py-4 rounded-0">
             <i class="fa-solid fa-right-from-bracket fa-2xl"></i>
         </a>
@@ -77,7 +65,7 @@
             <nav x-data="{ open: false }">
     <!-- Primary Navigation Menu -->
     <div class="w-full px-4 sm:px-6 lg:px-8 bg-white border-b border-gray-200">
-        <div class="flex justify-between h-[2.5rem] sm:h-12 md:h-14 lg:h-16">
+        <div class="flex justify-between h-16">
             <!-- Hamburger -->
             <div class="-me-2 flex items-center sm:hidden">
                 <button @click="open = ! open"
@@ -100,12 +88,12 @@
             <div class="shrink-0 flex items-center h-full w-auto p-1">
                 <!-- Analysis -->
                 <button
-    type="submit" class="inline-flex items-center bg-primary border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition ease-in-out duration-150 px-3 py-2 mr-3 justify-center text-nowrap hidden sm:flex" @click="window.location.href='https://ansa1019.github.io/treatment/analysis'">
+    type="submit" class="inline-flex items-center bg-primary border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition ease-in-out duration-150 px-3 py-2 mr-3 justify-center text-nowrap hidden sm:flex" @click="window.location.href='http://127.0.0.1/analysis'">
     new analysis
 </button>
 
                 <!-- Image -->
-                <img src="https://ansa1019.github.io/treatment/treatment.png" class="block fill-current h-full" alt="">
+                <img src="/treatment/user.png" class="block fill-current h-full" alt="">
             </div>
         </div>
     </div>
@@ -116,19 +104,18 @@
         <a class="block w-full p-3 border-l-4 border-primary text-primary text-decoration-none transition duration-150 ease-in-out disabled" href="http://127.0.0.1">
     Dashboard
 </a>
-        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="https://ansa1019.github.io/treatment/project">
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/project">
     project
 </a>
 
         <!-- Authentication -->
-        <form method="POST" action="https://ansa1019.github.io/treatment/logout" class="w-full">
-            <input type="hidden" name="_token" value="oxav0LtS3JORdWGOuhpRFAHItrKGzXhViSEMy3vT" autocomplete="off">            <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="https://ansa1019.github.io/treatment/logout" onclick="event.preventDefault();this.closest('form').submit();" id="logout">
+        <form method="POST" action="http://127.0.0.1/logout" class="w-full">
+            <input type="hidden" name="_token" value="QfdCsQwbld6NfJZfUGIEqyCzQDfb0u079scymlf6" autocomplete="off">            <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1" onclick="event.preventDefault();this.closest('form').submit();" id="logout">
     Log out
 </a>
         </form>
     </div>
 </nav>
-
             <!-- Page Content -->
             <div class="row h-full p-sm-2 p-md-3 p-xl-4 m-0 p-0">
                 <div class="col-12 col-lg-8 lg:h-full m-0 p-0">
@@ -156,7 +143,7 @@
                                                                                                                                                 <td>In Progress</td>
                                                                                                                                                 <td>mCRPC</td>
                                                                                                     <td>
-                                    <a href="https://ansa1019.github.io/treatment/analysis/0" class="btn btn-primary rounded-5">Analysis</a>
+                                    <a href="http://127.0.0.1/analysis/0" class="btn btn-primary rounded-5">Analysis</a>
                                 </td>
                             </tr>
                                                     <tr>
@@ -167,7 +154,7 @@
                                                                                                                                                 <td>Done</td>
                                                                                                                                                 <td>mCRPC</td>
                                                                                                     <td>
-                                    <a href="https://ansa1019.github.io/treatment/analysis/1" class="btn btn-primary rounded-5">Analysis</a>
+                                    <a href="http://127.0.0.1/analysis/1" class="btn btn-primary rounded-5">Analysis</a>
                                 </td>
                             </tr>
                                                     <tr>
@@ -178,7 +165,7 @@
                                                                                                                                                 <td>Done</td>
                                                                                                                                                 <td>mCRPC</td>
                                                                                                     <td>
-                                    <a href="https://ansa1019.github.io/treatment/analysis/2" class="btn btn-primary rounded-5">Analysis</a>
+                                    <a href="http://127.0.0.1/analysis/2" class="btn btn-primary rounded-5">Analysis</a>
                                 </td>
                             </tr>
                                                     <tr>
@@ -189,7 +176,7 @@
                                                                                                                                                 <td>Done</td>
                                                                                                                                                 <td>mCRPC</td>
                                                                                                     <td>
-                                    <a href="https://ansa1019.github.io/treatment/analysis/3" class="btn btn-primary rounded-5">Analysis</a>
+                                    <a href="http://127.0.0.1/analysis/3" class="btn btn-primary rounded-5">Analysis</a>
                                 </td>
                             </tr>
                                             </tbody>
@@ -220,7 +207,7 @@
                                                                                                                                                 <td>view</td>
                                                                                                                                                 <td>mCRPC</td>
                                                                                                     <td>
-                                    <a href="https://ansa1019.github.io/treatment/analysis/0"
+                                    <a href="http://127.0.0.1/analysis/0"
                                         class="btn btn-primary rounded-5">Analysis</a>
                                 </td>
                             </tr>
@@ -232,7 +219,7 @@
                                                                                                                                                 <td>view</td>
                                                                                                                                                 <td>mCRPC</td>
                                                                                                     <td>
-                                    <a href="https://ansa1019.github.io/treatment/analysis/1"
+                                    <a href="http://127.0.0.1/analysis/1"
                                         class="btn btn-primary rounded-5">Analysis</a>
                                 </td>
                             </tr>
@@ -244,7 +231,7 @@
                                                                                                                                                 <td>view</td>
                                                                                                                                                 <td>mCRPC</td>
                                                                                                     <td>
-                                    <a href="https://ansa1019.github.io/treatment/analysis/2"
+                                    <a href="http://127.0.0.1/analysis/2"
                                         class="btn btn-primary rounded-5">Analysis</a>
                                 </td>
                             </tr>
@@ -256,7 +243,7 @@
                                                                                                                                                 <td>view</td>
                                                                                                                                                 <td>mCRPC</td>
                                                                                                     <td>
-                                    <a href="https://ansa1019.github.io/treatment/analysis/3"
+                                    <a href="http://127.0.0.1/analysis/3"
                                         class="btn btn-primary rounded-5">Analysis</a>
                                 </td>
                             </tr>

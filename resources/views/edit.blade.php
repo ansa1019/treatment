@@ -21,7 +21,7 @@
                         @endif
                     @endforeach
                     <td>
-                        <a href="/updated-edit" class="btn btn-primary rounded-5">Edit</a>
+                        <a href="#" class="btn btn-primary rounded-5">Edit</a>
                     </td>
                 </tr>
             @endforeach

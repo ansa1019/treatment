@@ -1,7 +1,7 @@
 <nav x-data="{ open: false }">
     <!-- Primary Navigation Menu -->
     <div class="w-full px-4 sm:px-6 lg:px-8 bg-white border-b border-gray-200">
-        <div class="flex justify-between h-[2.5rem] sm:h-12 md:h-14 lg:h-16">
+        <div class="flex justify-between h-16">
             <!-- Hamburger -->
             <div class="-me-2 flex items-center sm:hidden">
                 <button @click="open = ! open"
@@ -29,7 +29,7 @@
                 </x-primary-button>
 
                 <!-- Image -->
-                <img src="{{ asset('treatment.png') }}" class="block fill-current h-full" alt="">
+                <img src="{{ asset('user.png') }}" class="block fill-current h-full" alt="">
             </div>
         </div>
     </div>
@@ -47,7 +47,7 @@
         <!-- Authentication -->
         <form method="POST" action="{{ route('logout') }}" class="w-full">
             @csrf
-            <x-responsive-nav-link :href="route('logout')" :active="request()->routeIs('logout')"
+            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('logout')"
                 onclick="event.preventDefault();this.closest('form').submit();" id="logout">
                 {{ __('Log out') }}
             </x-responsive-nav-link>

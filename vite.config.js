@@ -17,4 +17,5 @@ export default defineConfig({
             $: "jQuery",
         },
     },
+    base: '/treatment/',
 });

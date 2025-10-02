@@ -3,13 +3,15 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "deploy": "copy .env.production .env && npm run build && php artisan export && gh-pages -d dist && copy .env.local .env"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.2",
         "alpinejs": "^3.4.2",
         "autoprefixer": "^10.4.2",
         "axios": "^1.6.4",
+        "gh-pages": "^6.3.0",
         "laravel-vite-plugin": "^1.0.0",
         "postcss": "^8.4.31",
         "sass": "^1.79.4",

@@ -4,7 +4,7 @@
 
         {{-- 按鈕 --}}
         <div class="text-center">
-            <form method="POST" action="{{ route('demo.analysis.run') }}">
+            <form method="POST" action="{{ route('demo-analysis/run') }}">
                 @csrf
                 <button type="submit" class="btn btn-primary px-6 py-2 text-lg">
                     🚀 開始分析

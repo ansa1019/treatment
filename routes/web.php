@@ -9,8 +9,9 @@ use App\Http\Controllers\SettingController;
 use App\Http\Controllers\DemoAnalysisController; #模擬分析
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Response; #回傳圖片
-
-
+# 預設帳號用
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,13 +22,16 @@ use Illuminate\Support\Facades\Response; #回傳圖片
 | be assigned to the 'web' middleware group. Make something great!
 |
 */
+# 預設帳號用
+$user = User::first();
+Auth::login($user);
 
 Route::get('/', [DashboardController::class, 'view'])->name('dashboard');
 Route::get('/project', [ProjectController::class, 'view'])->name('project');
 Route::get('/sample', [SampleController::class, 'view'])->name('sample');
 Route::get('/analysis', [AnalysisController::class, 'new'])->name('new_analysis');
-Route::get('/demo-analysis', [DemoAnalysisController::class, 'index'])->name('demo.analysis');
-Route::post('/demo-analysis/run', [DemoAnalysisController::class, 'run'])->name('demo.analysis.run');
+Route::get('/demo-analysis', [DemoAnalysisController::class, 'index'])->name('demo-analysis');
+Route::post('/demo-analysis/run', [DemoAnalysisController::class, 'run'])->name('demo-analysis/run');
 Route::get('/setting', [SettingController::class, 'personal'])->name('setting.personal');
 Route::patch('/setting', [SettingController::class, 'update'])->name('setting.update');
 Route::delete('/setting', [SettingController::class, 'destroy'])->name('setting.destroy');

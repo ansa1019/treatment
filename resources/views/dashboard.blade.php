@@ -22,7 +22,7 @@
                                     @endif
                                 @endforeach
                                 <td>
-                                    <a href="/analysis/{{ $index }}" class="btn btn-primary rounded-5">Analysis</a>
+                                    <a href="{{ url('analysis/' . $index) }}" class="btn btn-primary rounded-5">Analysis</a>
                                 </td>
                             </tr>
                         @endforeach
@@ -52,7 +52,7 @@
                                     @endif
                                 @endforeach
                                 <td>
-                                    <a href="/analysis/{{ $index }}"
+                                    <a href="{{ url('analysis/' . $index) }}"
                                         class="btn btn-primary rounded-5">Analysis</a>
                                 </td>
                             </tr>

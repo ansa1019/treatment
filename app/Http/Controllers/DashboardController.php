@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\View\View;
+use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
     /**
-     * Display the dashboard view.
+     * Display the dashboard.
      */
-    public function view(): View
+    public function view(Request $request): View
     {
         return view('dashboard');
     }

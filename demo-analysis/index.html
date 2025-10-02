@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="evYsOFz7neW4IDU37odqe3WO8OPLcD8LIxLALVyc">
+
+    <title>Drug Decision Helper</title>
+    <link rel="icon" href="/treatment/logo.png">
+
+    <!-- Scripts -->
+    <link rel="preload" as="style" href="/treatment/build/assets/app-BGEKq-JO.css" /><link rel="preload" as="style" href="/treatment/build/assets/app-CGxzH9Gr.css" /><link rel="modulepreload" href="/treatment/build/assets/app-gxKLSGde.js" /><link rel="stylesheet" href="/treatment/build/assets/app-BGEKq-JO.css" /><link rel="stylesheet" href="/treatment/build/assets/app-CGxzH9Gr.css" /><script type="module" src="/treatment/build/assets/app-gxKLSGde.js"></script>    <script src="https://kit.fontawesome.com/ddbe078107.js" crossorigin="anonymous"></script>
+    <script src="/treatment/resources/js/index.js"></script>
+</head>
+
+<body class="font-sans antialiased">
+    <!-- Sidebar -->
+    <div id="sidebar" class="bg-secondary hidden sm:block p-0 fixed">
+        <div class="h-full flex flex-col justify-between align-items-center">
+    <a href="https://ansa1019.github.io/treatment/" class="row row-p link-body-emphasis text-decoration-none" title="Icon-only"
+        data-bs-toggle="tooltip" data-bs-placement="right">
+        <img src="/treatment/logo.png" class="w-full h-auto p-2" alt="">
+        <span class="visually-hidden">Icon-only</span>
+    </a>
+    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+        <li class="nav-item">
+            <a href="https://ansa1019.github.io/treatment/" title="Home"
+                class="nav-link py-4 rounded-0">
+                <i class="fa-solid fa-house fa-2xl"></i>
+            </a>
+        </li>
+        <li>
+            <a href="http://127.0.0.1/project" title="Project"
+                class="nav-link py-4 rounded-0">
+                <i class="fa-solid fa-hospital-user fa-2xl"></i>
+            </a>
+        </li>
+        <li>
+            <a href="http://127.0.0.1/sample" title="Sample"
+                class="nav-link py-4 rounded-0">
+                <i class="fa-solid fa-file fa-2xl"></i>
+            </a>
+        </li>
+        <li>
+            <a href="http://127.0.0.1/edit" title="Edit"
+                class="nav-link py-4 rounded-0">
+                <i class="fa-solid fa-pen fa-2xl"></i>
+            </a>
+        </li>
+        <li>
+            <a href="http://127.0.0.1/demo-analysis" title="Demo Analysis"
+                class="nav-link active py-4 rounded-0">
+                <i class="fa-solid fa-flask fa-2xl"></i>
+            </a>
+        </li>
+        <li>
+            <a href="http://127.0.0.1/setting" title="Setting"
+                class="nav-link py-4 rounded-0">
+                <i class="fa-solid fa-gear fa-2xl"></i>
+            </a>
+        </li>
+    </ul>
+
+    <!-- Authentication -->
+    <form method="POST" action="http://127.0.0.1/logout">
+        <input type="hidden" name="_token" value="evYsOFz7neW4IDU37odqe3WO8OPLcD8LIxLALVyc" autocomplete="off">        <a href="https://ansa1019.github.io/treatment/" onclick="event.preventDefault();this.closest('form').submit();" id="logout"
+            class="nav-link py-4 rounded-0">
+            <i class="fa-solid fa-right-from-bracket fa-2xl"></i>
+        </a>
+    </form>
+</div>
+    </div>
+    <div class="container-fluid min-h-screen w-full bg-gray-100 flex-nowrap">
+        <div class="col w-full p-0">
+            <!-- Navigation -->
+            <nav x-data="{ open: false }">
+    <!-- Primary Navigation Menu -->
+    <div class="w-full px-4 sm:px-6 lg:px-8 bg-white border-b border-gray-200">
+        <div class="flex justify-between h-16">
+            <!-- Hamburger -->
+            <div class="-me-2 flex items-center sm:hidden">
+                <button @click="open = ! open"
+                    class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                        <path :class="{ 'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Name -->
+            <p class="font-semibold text-primary self-center fs-3 mx-2 my-0">
+                Drug Decision Helper
+            </p>
+
+            <div class="shrink-0 flex items-center h-full w-auto p-1">
+                <!-- Analysis -->
+                <button
+    type="submit" class="inline-flex items-center bg-primary border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition ease-in-out duration-150 px-3 py-2 mr-3 justify-center text-nowrap hidden sm:flex" @click="window.location.href='http://127.0.0.1/analysis'">
+    new analysis
+</button>
+
+                <!-- Image -->
+                <img src="/treatment/user.png" class="block fill-current h-full" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Responsive Navigation Menu -->
+    <div :class="{ 'block': open, 'hidden': !open }"
+        class="text-primary bg-light shadow-sm fw-semibold hidden sm:hidden">
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1">
+    Home
+</a>
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/project">
+    Project
+</a>
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/sample">
+    Sample
+</a>
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/edit">
+    Edit
+</a>
+        <a class="block w-full p-3 border-l-4 border-primary text-primary text-decoration-none transition duration-150 ease-in-out disabled" href="http://127.0.0.1/demo-analysis">
+    Demo Analysis
+</a>
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/setting">
+    Setting
+</a>
+
+        <!-- Authentication -->
+        <form method="POST" action="http://127.0.0.1/logout" class="w-full">
+            <input type="hidden" name="_token" value="evYsOFz7neW4IDU37odqe3WO8OPLcD8LIxLALVyc" autocomplete="off">            <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="https://ansa1019.github.io/treatment/" onclick="event.preventDefault();this.closest('form').submit();" id="logout">
+    Log out
+</a>
+        </form>
+    </div>
+</nav>
+
+            <!-- Page Content -->
+            <div class="row h-full p-sm-2 p-md-3 p-xl-4 m-0 p-0">
+                <div class="container mx-auto py-8">
+        <h2 class="text-center text-2xl font-bold mb-6">臨床決策支援系統 Demo</h2>
+
+        
+        <div class="text-center">
+            <form method="POST" action="http://127.0.0.1/demo-analysis/run">
+                <input type="hidden" name="_token" value="evYsOFz7neW4IDU37odqe3WO8OPLcD8LIxLALVyc" autocomplete="off">                <button type="submit" class="btn btn-primary px-6 py-2 text-lg">
+                    🚀 開始分析
+                </button>
+            </form>
+        </div>
+
+        
+         
+
+        
+        
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

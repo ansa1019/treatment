@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="jIbIOoCZLeYxYiJqe03XGSqZMMKvR7BMwHHK6zPc">
+    <meta name="csrf-token" content="1fEaodDcvkr8SM5LbhcvN7OrEVEZJiIQAp8iRbJT">
 
     <title>Drug Decision Helper</title>
     <link rel="icon" href="/treatment/logo.png">
@@ -51,8 +51,8 @@
     </ul>
 
     <!-- Authentication -->
-    <form method="POST" action="http://127.0.0.1">
-        <input type="hidden" name="_token" value="jIbIOoCZLeYxYiJqe03XGSqZMMKvR7BMwHHK6zPc" autocomplete="off">        <a href="#" onclick="event.preventDefault();this.closest('form').submit();" id="logout"
+    <form method="POST" action="http://localhost">
+        <input type="hidden" name="_token" value="1fEaodDcvkr8SM5LbhcvN7OrEVEZJiIQAp8iRbJT" autocomplete="off">        <a href="#" onclick="event.preventDefault();this.closest('form').submit();" id="logout"
             class="nav-link py-4 rounded-0">
             <i class="fa-solid fa-right-from-bracket fa-2xl"></i>
         </a>
@@ -88,7 +88,7 @@
             <div class="shrink-0 flex items-center h-full w-auto p-1">
                 <!-- Analysis -->
                 <button
-    type="submit" class="inline-flex items-center bg-primary border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition ease-in-out duration-150 px-3 py-2 mr-3 justify-center text-nowrap hidden sm:flex" @click="window.location.href='http://127.0.0.1/analysis'">
+    type="submit" class="inline-flex items-center bg-primary border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition ease-in-out duration-150 px-3 py-2 mr-3 justify-center text-nowrap hidden sm:flex" @click="window.location.href='http://localhost/analysis'">
     new analysis
 </button>
 
@@ -101,16 +101,16 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{ 'block': open, 'hidden': !open }"
         class="text-primary bg-light shadow-sm fw-semibold hidden sm:hidden">
-        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1">
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://localhost">
     Dashboard
 </a>
-        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/project">
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://localhost/project">
     project
 </a>
 
         <!-- Authentication -->
-        <form method="POST" action="http://127.0.0.1/logout" class="w-full">
-            <input type="hidden" name="_token" value="jIbIOoCZLeYxYiJqe03XGSqZMMKvR7BMwHHK6zPc" autocomplete="off">            <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1" onclick="event.preventDefault();this.closest('form').submit();" id="logout">
+        <form method="POST" action="http://localhost/logout" class="w-full">
+            <input type="hidden" name="_token" value="1fEaodDcvkr8SM5LbhcvN7OrEVEZJiIQAp8iRbJT" autocomplete="off">            <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://localhost" onclick="event.preventDefault();this.closest('form').submit();" id="logout">
     Log out
 </a>
         </form>
@@ -133,11 +133,11 @@
         </p>
     </header>
 
-    <form id='send-verification' method='post' action='http://127.0.0.1/email/verification-notification'>
-        <input type="hidden" name="_token" value="jIbIOoCZLeYxYiJqe03XGSqZMMKvR7BMwHHK6zPc" autocomplete="off">    </form>
+    <form id='send-verification' method='post' action='http://localhost/email/verification-notification'>
+        <input type="hidden" name="_token" value="1fEaodDcvkr8SM5LbhcvN7OrEVEZJiIQAp8iRbJT" autocomplete="off">    </form>
 
-    <form method='post' action='http://127.0.0.1/setting' class='mt-6 space-y-6'>
-        <input type="hidden" name="_token" value="jIbIOoCZLeYxYiJqe03XGSqZMMKvR7BMwHHK6zPc" autocomplete="off">        <input type="hidden" name="_method" value="patch">
+    <form method='post' action='http://localhost/setting' class='mt-6 space-y-6'>
+        <input type="hidden" name="_token" value="1fEaodDcvkr8SM5LbhcvN7OrEVEZJiIQAp8iRbJT" autocomplete="off">        <input type="hidden" name="_method" value="patch">
         <div>
             <label class="block font-medium text-sm text-gray-700" for="name">
     Name
@@ -184,8 +184,8 @@
         </p>
     </header>
 
-    <form method='post' action='http://127.0.0.1/password' class='mt-6 space-y-6'>
-        <input type="hidden" name="_token" value="jIbIOoCZLeYxYiJqe03XGSqZMMKvR7BMwHHK6zPc" autocomplete="off">        <input type="hidden" name="_method" value="put">
+    <form method='post' action='http://localhost/password' class='mt-6 space-y-6'>
+        <input type="hidden" name="_token" value="1fEaodDcvkr8SM5LbhcvN7OrEVEZJiIQAp8iRbJT" autocomplete="off">        <input type="hidden" name="_method" value="put">
         <div>
             <label class="block font-medium text-sm text-gray-700" for="update_password_current_password">
     Current Password
@@ -305,8 +305,8 @@
         x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
         x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
     >
-        <form method='post' action='http://127.0.0.1/setting' class='p-6'>
-            <input type="hidden" name="_token" value="jIbIOoCZLeYxYiJqe03XGSqZMMKvR7BMwHHK6zPc" autocomplete="off">            <input type="hidden" name="_method" value="delete">
+        <form method='post' action='http://localhost/setting' class='p-6'>
+            <input type="hidden" name="_token" value="1fEaodDcvkr8SM5LbhcvN7OrEVEZJiIQAp8iRbJT" autocomplete="off">            <input type="hidden" name="_method" value="delete">
             <h2 class='text-lg font-medium text-gray-900'>
                 Are you sure you want to delete your account?
             </h2>

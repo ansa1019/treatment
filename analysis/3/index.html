@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="jIbIOoCZLeYxYiJqe03XGSqZMMKvR7BMwHHK6zPc">
+    <meta name="csrf-token" content="1fEaodDcvkr8SM5LbhcvN7OrEVEZJiIQAp8iRbJT">
 
     <title>Drug Decision Helper</title>
     <link rel="icon" href="/treatment/logo.png">
@@ -51,8 +51,8 @@
     </ul>
 
     <!-- Authentication -->
-    <form method="POST" action="http://127.0.0.1">
-        <input type="hidden" name="_token" value="jIbIOoCZLeYxYiJqe03XGSqZMMKvR7BMwHHK6zPc" autocomplete="off">        <a href="#" onclick="event.preventDefault();this.closest('form').submit();" id="logout"
+    <form method="POST" action="http://localhost">
+        <input type="hidden" name="_token" value="1fEaodDcvkr8SM5LbhcvN7OrEVEZJiIQAp8iRbJT" autocomplete="off">        <a href="#" onclick="event.preventDefault();this.closest('form').submit();" id="logout"
             class="nav-link py-4 rounded-0">
             <i class="fa-solid fa-right-from-bracket fa-2xl"></i>
         </a>
@@ -88,7 +88,7 @@
             <div class="shrink-0 flex items-center h-full w-auto p-1">
                 <!-- Analysis -->
                 <button
-    type="submit" class="inline-flex items-center bg-primary border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition ease-in-out duration-150 px-3 py-2 mr-3 justify-center text-nowrap hidden sm:flex" @click="window.location.href='http://127.0.0.1/analysis'">
+    type="submit" class="inline-flex items-center bg-primary border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition ease-in-out duration-150 px-3 py-2 mr-3 justify-center text-nowrap hidden sm:flex" @click="window.location.href='http://localhost/analysis'">
     new analysis
 </button>
 
@@ -101,16 +101,16 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{ 'block': open, 'hidden': !open }"
         class="text-primary bg-light shadow-sm fw-semibold hidden sm:hidden">
-        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1">
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://localhost">
     Dashboard
 </a>
-        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1/project">
+        <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://localhost/project">
     project
 </a>
 
         <!-- Authentication -->
-        <form method="POST" action="http://127.0.0.1/logout" class="w-full">
-            <input type="hidden" name="_token" value="jIbIOoCZLeYxYiJqe03XGSqZMMKvR7BMwHHK6zPc" autocomplete="off">            <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://127.0.0.1" onclick="event.preventDefault();this.closest('form').submit();" id="logout">
+        <form method="POST" action="http://localhost/logout" class="w-full">
+            <input type="hidden" name="_token" value="1fEaodDcvkr8SM5LbhcvN7OrEVEZJiIQAp8iRbJT" autocomplete="off">            <a class="block w-full p-3 border-l-4 border-transparent text-primary text-decoration-none hover:border-secondary hover:bg-gray-100 transition duration-150 ease-in-out" href="http://localhost" onclick="event.preventDefault();this.closest('form').submit();" id="logout">
     Log out
 </a>
         </form>
@@ -119,7 +119,7 @@
             <!-- Page Content -->
             <div class="row h-full p-sm-2 p-md-3 p-xl-4 m-0 p-0">
                 <div class="row align-self-start lg:h-[70vh]">
-        <form action="http://127.0.0.1/login" method="post"
+        <form action="http://localhost/login" method="post"
             class="flex flex-col col-12 col-lg-3 h-full rounded-md shadow-sm lg:mr-2 px-2">
             <div class="row bg-secondary flex-nowrap rounded-t-lg px-2 py-1">
                 <input  readonly type="text" class="border-gray-300 focus:border-primary focus:ring-secondary text-center rounded-md shadow-sm p-1 col-3" value="方大同" id="name" name="name" required="required" autofocus="autofocus">
